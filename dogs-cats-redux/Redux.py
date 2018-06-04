@@ -12,7 +12,7 @@ Created on Mon Jun 04 16:12:53 2018
 #Create references to important directories we will use over and over
 import os, sys
 
-os.chdir(r'G:\000. UCD- Data Science\Research Project\deeplearningprojects\Redux\\')
+os.chdir(r'xxxxx')
 os.getcwd()
 
 current_dir = os.getcwd()
@@ -20,7 +20,7 @@ path = current_dir+'\\data\\'
 
 
 # Adding utils and VGG python modules
-sys.path.insert(0, r'G:\000. UCD- Data Science\Research Project\deeplearningprojects\utils')
+sys.path.insert(0, r'xxxxxx')
 
 import utils; reload(utils)
 from utils import plots
@@ -94,16 +94,6 @@ vgg.finetune(batches)
 #Finally, we fit() the parameters of the model using the training data, reporting the accuracy on the validation set after every epoch. (An epoch is one full pass through the training data.)
 
 vgg.fit(batches, val_batches, nb_epoch=1)
-
-
-
-
-
-
-
-
-
-
 
 
 
